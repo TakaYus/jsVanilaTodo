@@ -18,7 +18,7 @@ const createIncompleteList = (text) => {
   div.className = "list_row";
   const pTag = document.createElement("p");
 
-  // 削除ボタン
+  // 削除ボタンとその処理
   const deleteButton = document.createElement("button");
   deleteButton.innerText = "削除";
   deleteButton.addEventListener("click", () => {
@@ -26,7 +26,7 @@ const createIncompleteList = (text) => {
     // document.getElementById("incomplete_list").removeChild(target);
     deleteFromInCompleteList(div.parentNode);
   });
-  // 完了ボタン
+  // 完了ボタンとその処理
   const completeButton = document.createElement("button");
   completeButton.innerText = "完了";
   completeButton.addEventListener("click", () => {
